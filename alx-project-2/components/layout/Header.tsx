@@ -1,13 +1,20 @@
-import React from 'react';
+// components/layout/Header.tsx
 import Link from 'next/link';
+import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-blue-600 p-4 flex justify-between items-center">
-      <h1 className="text-white text-3xl font-bold">Welcome to alx-project-2</h1>
-      <nav>
-        <Link href="/home" className="text-white mr-4">Home</Link>
-        <Link href="/about" className="text-white">About</Link>
+    <header className="bg-gray-800 text-white p-4">
+      <nav className="flex space-x-4">
+        <Link href="/home" passHref>
+          <span className="hover:underline cursor-pointer">Home</span>
+        </Link>
+        <Link href="/about" passHref>
+          <span className="hover:underline cursor-pointer">About</span>
+        </Link>
+        <Link href="/posts" passHref>
+          <span className="hover:underline cursor-pointer">Posts</span>
+        </Link>
       </nav>
     </header>
   );

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 import Card from '../components/common/Card';
 import PostModal from '../components/common/postModal';
+import Header from '../components/layout/Header';
 
 const Home: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,6 +23,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
+      <Header />
       <h1>Home Page</h1>
       <button onClick={handleOpenModal}>Create Post</button>
       <PostModal isOpen={isModalOpen} onClose={handleCloseModal} onSave={handleSavePost} />

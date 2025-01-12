@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import React from 'react';
 import Button from '../components/common/Button';
+import Header from '../components/layout/Header';
 
 const About: React.FC = () => {
   return (
     <div className="p-6">
+      <Header />
       <Head>
         <title>About</title>
       </Head>
