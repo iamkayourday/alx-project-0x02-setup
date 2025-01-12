@@ -12,3 +12,9 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
+// interfaces/index.ts
+export interface PostProps {
+  title: string;
+  content: string;
+  userId: number;
+}
